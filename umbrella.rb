@@ -8,9 +8,6 @@ user_location = gets.chomp
 # user_location = "Saint Paul"
 puts "Checking the weather at #{user_location}...."
 
-
-
-
 gmaps_key = ENV.fetch("GMAPS_KEY")
 
 gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{user_location}&key=#{gmaps_key}"
